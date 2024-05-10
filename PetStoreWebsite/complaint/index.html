@@ -1,0 +1,84 @@
+<html lang="en">
+	<head>
+		<title>Animal Planet | Complaint Form</title>
+		<meta charset ="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/Main.css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet">
+		<!-- Fonts -->
+		<link href="fonts/Cairo/cairo.css" rel="stylesheet">
+		<link href="fonts/Nunito/nunito.css" rel="stylesheet">
+		<link href="fonts/Sigmar_One/sigmar.css" rel="stylesheet">
+	</head>
+	<body>
+		
+
+		
+	<!-- Page Title -->
+
+		<div class="title">
+			<div class="overlay">
+				<h1>Complaint Form</h1>
+			</div>
+		</div>
+
+	<!-- Page Work -->
+
+        <div class="container">
+            <div id="form-main">
+                <div id="form-div">
+					<div class="wrong" id="wrong">
+						<p>Please complete the form</p>
+					</div>
+                    <form class="montform" id="reused_form" name="complaint-form" onsubmit="return false">
+						<input name="name" type="text" class="feedback-input" placeholder="Name" id="name" />
+						<input name="email" type="email" class="feedback-input" id="email" placeholder="Email" oninvalid="this.setCustomValidity(' ')" title="Please enter your email" />
+                         <div >
+							<i class="fa fa-address-book select-icon" aria-hidden="true"></i>
+                            <select  class="select" name="country" id="select">
+								<option value="choose complaint type" disabled selected>Choose Complaint Type</option>
+								<option value="customer service">Customer Service</option>
+								<option value="website problems">Website Problems</option>
+								<option value="mistreatment">Mistreatment</option>
+								<option value="Other....">Other....</option>
+                            </select>
+            
+                        </div>
+						<textarea name="complaint" class="feedback-input" id="comment" placeholder="Complaint"></textarea>
+                        <div class="submit">
+                            <button type="submit" class="button" onclick="vaild();">SUBMIT</button>
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+				</div >
+
+                <div  id="applo">
+                <p id="sty">We Are So Broken To Make You Sad But We Want You To Be sure That We will do everything we can to make you happy again Just Fill Out This Complaint Form And Every Thing Will Be Ok  </p>
+                </div>
+			</div>
+			<div class="correct" id="correct">
+				<i class="fa fa-check-circle-o"></i>
+				<p>Thanks for your message</p>
+			</div>
+        </div>
+
+	<!-- Mode -->
+
+	<div class="mode">
+		<h2>" One small cat changes coming home to an empty house to coming home "</h2>
+	</div>
+
+	<!--  Footer  -->
+
+		<div class="footer">
+			<div class="overlay">
+				<h2>Happy to serve you <i class="fa fa-smile-o" aria-hidden="true"></i></h2>
+				<h3>24/7</h3>
+			</div>
+		</div>
+
+
+	</body>
+
+</html>

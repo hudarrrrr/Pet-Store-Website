@@ -1,0 +1,347 @@
+/* Body and Main */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	direction: ltr;
+	margin: auto;
+	font-family: 'Nunito', sans-serif;
+	background-color: #fff;
+}
+img{
+	max-width: 100%
+}
+
+a{
+	color: #000;
+	font-size: 18px;
+	text-decoration: none;
+	transition: all .5s ease;
+}
+
+a:hover{
+	color: #00C9DB;
+	text-decoration: none;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.left{
+	float: left;
+	width: 25%;
+	margin: 0;
+}
+
+.center{
+	float: left;
+	width: 40%;
+}
+
+.right{
+	float: left;
+	width: 33%;
+	margin: 0;
+}
+
+ul{
+	list-style: none;
+	margin: auto;
+}
+
+li{
+	float: left;
+	margin-right: 3%;
+}
+
+/* Header */
+
+.header{
+    height: 60px;
+    padding: 2%;
+    background: #fff;
+    color: #000;
+}
+
+.logo{
+	width: 140px;
+    margin: -2% 8%;
+}
+
+.menu{
+	padding: 5% 0;	
+}
+
+.right .menu{
+	margin-left: 15%;
+}
+
+.responsive-menu , .responsive-icon{
+	display: none;
+}
+
+.responsive-menu{
+	margin-bottom: 2%;
+	transition: all .5s ease ;
+	background-color: #fff;
+	border-radius: 5px;
+    padding: 2%;
+}
+
+.responsive-menu li{
+	float: none;
+    text-align: center;
+    padding: 5%;
+}
+
+.responsive-icon{
+	text-align: center;
+    margin: 5% auto;
+    width: 35px;
+    padding: 1%;
+    font-size: 30px;
+    border: 2px solid #00c9db;
+	border-radius: 5px;
+}
+
+.responsive-icon:hover , .responsive-icon:active{
+	color: #00c9db;
+	border-color: #000;
+}
+
+/* Title */
+
+.title{
+    text-align: center;
+	background: url(..//images/cover-w.jpg);
+	background-position: center;
+    background-size: cover;
+	color: #fff;
+    font-size: 20px;
+}
+
+.title .overlay{
+	background-color: rgba(0, 0, 0, 0.5);
+	line-height: 200px;
+	height: 200px;
+}
+
+/* Page Work */
+
+.container{
+	background: url(..//images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 2%;
+	border-top: 5px solid #fff;
+}
+
+.contact-form{
+	width: 45%;
+    background: rgba(0,0,0,0.8);
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    margin: 2% auto;
+    color: #fff;
+}
+
+.input-fields input , .input-fields textarea{
+    margin: 2% auto;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #00c9DB;
+    padding: 5%;
+    width: 95%;
+	color: #fff;
+	font-family: 'Nunito', sans-serif;
+}
+
+.input-fields textarea{
+	height: 231px;
+    resize: none;
+    color: #fff;
+}
+
+.input-fields input::placeholder , .input-fields textarea::placeholder{
+    color: #fff;
+}
+
+.input-fields input:focus , .input-fields textarea:focus{
+	border: none!important;
+}
+
+.f-left{
+	float: left;
+	width: 50%;
+}
+
+.msg{
+	float: right;
+	width: 50%;
+}
+
+.button{
+	background: #00C9DB!important;
+    text-align: center;
+    padding: 3%!important;
+    border-radius: 5px;
+    text-transform: uppercase;
+	cursor: pointer;
+	font-size: 18px;
+	width: 100%!important;
+    transition: all .5s ease;
+}
+
+.button:hover{
+    background: #fff!important;
+    color: #00c9DB!important;
+}
+
+.wrong{
+	padding: 2%;
+    background-color: #d00909;
+    color: #fff;
+    border-radius: 5px;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	display: none;
+}
+
+/* Correct */
+
+.correct{
+	width: 50%;
+    margin: auto;
+	text-align: center;
+	display: none;
+}
+
+.correct i{
+	font-size: 200px;
+	color: #00C9DB;
+}
+
+/* Mode */
+
+.mode{
+	text-align: center;
+	padding: 2%;
+	border-top: 2px solid #000;
+}
+
+/* Footer  */
+
+.footer{
+	background: url("..//images/cat.jpg");
+	color: #000;
+    background-size: cover;
+	background-position: center;
+	font-size: 30px;
+}
+
+.footer .overlay{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 8% 0;
+	height: auto;
+}
+
+.footer h2 , .footer h3{
+    margin-left: 5%;
+}
+
+/* Copyrights */
+
+.copyrights{
+	height: 50px;
+	background: #fff;
+	padding: 1%;
+	color: #000;
+}
+
+.copyrights a{
+	color: #00C9DB;
+}
+
+.copyrights a:hover{
+	color: #000;
+}
+
+/* Resposive fix */
+
+@media screen and (min-width: 767px){
+
+	.responsive-menu{
+		display: none!important;
+	}
+
+}
+
+@media screen and (max-width: 1282px){
+
+	.header{
+		padding: 3% 2%;
+	}
+
+	.left{
+		width: 16%;
+	}
+
+	.center{
+		width: 52%;
+	}
+
+	.right{
+		width: 32%;
+    	margin: 1% 0;
+	}
+}
+
+@media screen and (max-width: 767px){
+	
+	.menu{
+		display: none;
+	}
+
+	.responsive-icon{
+		display: block;
+	}
+
+	.right{
+		width: 0;
+	}
+
+	.center{
+		float: right;
+		width: 40%;
+	}
+
+	.mode{
+		padding: 5%;
+	}
+
+	.header{
+		padding: 5%;
+	}
+
+	.contact-form{
+		width: 70%;
+	}
+
+	.f-left , .msg{
+		float: none;
+		width: 100%;
+	}
+
+	.dark{
+		padding: 2%;
+	}
+
+
+}

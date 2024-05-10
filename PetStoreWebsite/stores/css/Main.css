@@ -1,0 +1,357 @@
+/* Body and Main */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	direction: ltr;
+	margin: auto;
+	font-family: 'Nunito', sans-serif;
+	background-color: #fff;
+}
+img{
+	max-width: 100%
+}
+
+a{
+	color: #000;
+	font-size: 18px;
+	text-decoration: none;
+	transition: all .5s ease;
+}
+
+a:hover{
+	color: #00C9DB;
+	text-decoration: none;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.left{
+	float: left;
+	width: 25%;
+	margin: 0;
+}
+
+.center{
+	float: left;
+	width: 40%;
+}
+
+.right{
+	float: left;
+	width: 33%;
+	margin: 0;
+}
+
+ul{
+	list-style: none;
+	margin: auto;
+}
+
+li{
+	float: left;
+	margin-right: 3%;
+}
+
+/* Header */
+
+.header{
+    height: 60px;
+    padding: 2%;
+    background: #fff;
+    color: #000;
+}
+
+.logo{
+	width: 140px;
+    margin: -2% 8%;
+}
+
+.menu{
+	padding: 5% 0;	
+}
+
+.right .menu{
+	margin-left: 15%;
+}
+
+.responsive-menu , .responsive-icon{
+	display: none;
+}
+
+.responsive-menu{
+	margin-bottom: 2%;
+	transition: all .5s ease ;
+	background-color: #fff;
+	border-radius: 5px;
+    padding: 2%;
+}
+
+.responsive-menu li{
+	float: none;
+    text-align: center;
+    padding: 5%;
+}
+
+.responsive-icon{
+	text-align: center;
+    margin: 5% auto;
+    width: 35px;
+    padding: 1%;
+    font-size: 30px;
+    border: 2px solid #00c9db;
+	border-radius: 5px;
+}
+
+.responsive-icon:hover , .responsive-icon:active{
+	color: #00c9db;
+	border-color: #000;
+}
+
+/* Title */
+
+.title{
+    text-align: center;
+	background: url(..//images/cover-w.jpg);
+	background-position: center;
+    background-size: cover;
+	color: #fff;
+    font-size: 20px;
+}
+
+.title .overlay{
+	background-color: rgba(0, 0, 0, 0.5);
+	line-height: 200px;
+	height: 200px;
+}
+
+/* Page Work */
+
+.container{
+	width: 100%;
+    margin: auto;
+    padding: 2% 0;
+}
+
+.search{
+    text-align: center;
+    padding: 1%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.search h2{
+	font-weight: 100;
+}
+
+#search{
+	padding: 1%;
+    width: 30%;
+    border: none;
+    border-bottom: 5px solid #00c9db;
+    background: #f7f7f7;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.button{
+	font-family: fontawesome;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    background: #00c9db;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1%;
+	position: absolute;
+	transition: all .5s ease;
+	cursor: pointer;
+}
+
+.button:hover{
+	background-color: #fff;
+	padding: 0.8%;
+	border-bottom: 5px solid #00c9db;
+	color: #00c9db;
+}
+
+.button:focus{
+	outline: none;
+}
+
+#search:focus{
+	outline-color: #00c9db;
+	border: none;
+	border-top: 4px solid #00c9db;
+}
+
+/* Results */
+
+.results{
+	padding: 2%;
+}
+table{
+	border:2px solid #00c9db;
+	border-bottom-color:#00c9db;
+	width: 100%;
+}
+
+tr,td{
+	border:2px solid #00c9db;
+	
+}
+
+.store{
+	padding: 2% 0;
+	border-top: 2px solid #00C9DB;
+}
+
+.store-title{
+	transition: all .5s ease;
+	cursor: pointer;
+}
+
+.store-title:hover , .active{
+	color: #00C9DB;
+}
+
+.store h2 , .store p{
+	display: inline;
+	margin-right: 2%;
+	padding: 1%;
+}
+
+.store a{
+	display: block;
+	padding: 1%;
+}
+
+.store span{
+	color: #00C9DB;
+}
+
+.store-info{
+	transition: all .5s ease;
+	display: none;
+}
+
+/* Mode */
+
+.mode{
+	text-align: center;
+	padding: 2%;
+	border-top: 2px solid #000;
+}
+
+/* Footer  */
+
+.footer{
+	background: url("..//images/cat.jpg");
+	color: #000;
+    background-size: cover;
+	background-position: center;
+	font-size: 30px;
+}
+
+.footer .overlay{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 8% 0;
+	height: auto;
+}
+
+.footer h2 , .footer h3{
+    margin-left: 5%;
+}
+
+/* Copyrights */
+
+.copyrights{
+	height: 50px;
+	background: #fff;
+	padding: 1%;
+	color: #000;
+}
+
+.copyrights a{
+	color: #00C9DB;
+}
+
+.copyrights a:hover{
+	color: #000;
+}
+
+/* Resposive fix */
+
+@media screen and (min-width: 767px){
+
+	.responsive-menu{
+		display: none!important;
+	}
+
+}
+
+@media screen and (max-width: 1282px){
+
+	.header{
+		padding: 3% 2%;
+	}
+
+	.left{
+		width: 16%;
+	}
+
+	.center{
+		width: 52%;
+	}
+
+	.right{
+		width: 32%;
+    	margin: 1% 0;
+	}
+}
+
+@media screen and (max-width: 767px){
+	
+	.menu{
+		display: none;
+	}
+
+	.responsive-icon{
+		display: block;
+	}
+
+	.right{
+		width: 0;
+	}
+
+	.center{
+		float: right;
+		width: 40%;
+	}
+
+	.mode{
+		padding: 5%;
+	}
+
+	.header{
+		padding: 5%;
+	}
+
+	.store h2, .store p{
+		display: block;
+	}
+
+	.search{
+		height: auto;
+	}
+
+	.dark{
+		padding: 2%;
+	}
+
+}
